@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SDP PROJECT - TOUR IN</title>
+  <!-- External stylesheets -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="/css/bootstrap1.min.css">
+  <link rel="stylesheet" href="/css/all.min.css">
+  <link rel="stylesheet" href="/css/templatemo-style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-wide w3-padding w3-card">
+    <a href="#home" class="w3-bar-item w3-button"><b>TOUR IN</b></a>
+    <!-- Mobile Navbar Toggle -->
+    <a href="javascript:void(0);" class="w3-bar-item w3-button w3-right w3-hide-large" onclick="toggleNav()">
+      <i class="fa fa-bars"></i>
+    </a>
+    <!-- Links -->
+    <div class="w3-right w3-hide-small" id="navbarLinks">
+      <a href="#projects" class="w3-bar-item w3-button">Services</a>
+      <a href="#about" class="w3-bar-item w3-button">About us</a>
+      <a href="/contactus" class="w3-bar-item w3-button">Contact us</a>
+      <a href="/logout" class="w3-bar-item w3-button">Logout</a>
+    </div>
+  </div>
+</div>
+
+<!-- JavaScript for mobile menu -->
+<script>
+  function toggleNav() {
+    const navLinks = document.getElementById("navbarLinks");
+    navLinks.classList.toggle("w3-hide-small");
+  }
+</script>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1500px;" id="home">
+  <img class="w3-image" src="/images/main.jpg" alt="Tour In" width="1500" height="600">
+  <div class="w3-display-middle w3-margin-top w3-center">
+    <h1 class="w3-xxlarge w3-text-white">Explore India's Cultural Heritage</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content w3-padding" style="max-width:1564px">
+
+  <!-- Project Section -->
+  <div class="w3-container w3-padding-32" id="projects">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">Services</h3>
+    <div class="row">
+      <!-- Historical Monuments -->
+      <div class="col-md-4 mb-5">
+        <figure class="effect-ming tm-video-item">
+          <img src="/mon.jpg" alt="Historical Monuments" class="w3-image" style="width: 100%;">
+          <figcaption>
+            <h2>HISTORICAL</h2>
+            <a href="/monuments">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- Indian Heritage -->
+      <div class="col-md-4 mb-5">
+        <figure class="effect-ming tm-video-item">
+        <img src="/main.jpg" alt="Main Image">
+          <figcaption class="d-flex align-items-center justify-content-center">
+            <h2>INDIAN HERITAGE</h2>
+            <a href="/Heritage">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- Culture -->
+      <div class="col-md-4 mb-5">
+        <figure class="effect-ming tm-video-item">
+          <img src="/photo_2021-11-30_09-33-15.jpg" alt="Culture" class="img-fluid">
+          <figcaption>
+            <h2>CULTURE</h2>
+            <a href="/culture">View more</a>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32" id="about">
+    <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">About</h3>
+    <p>
+      This website motivates people to develop an interest in Indian Culture, Heritage, Historical Places, and Famous Monuments. Our curated packages offer an adventure to experience India's stunning beauty and historical significance.
+      We are committed to providing seamless holiday experiences and ensuring our clients have the best travel services, including flights, hotels, and visa assistance.
+    </p>
+  </div>
+
+  <!-- Image Section -->
+  <div class="w3-container">
+    <img src="/Historical-p.jpg" alt="Gallery Image" class="w3-image" style="width:100%">
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <p>Powered by <a href="#" title="Team 17" target="_blank" class="w3-hover-text-green">Team 17</a></p>
+</footer>
+
+</body>
+</html>

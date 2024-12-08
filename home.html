@@ -1,0 +1,166 @@
+<!DOCTYPE html> 
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" th:href="@{/css/bootstrap1.min.css}">
+    <link rel="stylesheet" th:href="@{/css/all.min.css}">
+    <link rel="stylesheet" th:href="@{/css/templatemo-style.css}">
+    <link rel="stylesheet" href="style.css"> 
+    <style type="text/css">
+        /* Your custom CSS */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        header {
+            background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("image-path/aa.jpg");
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        .nav-area {
+            float: right;
+            list-style: none;
+            margin-top: 30px;
+        }
+        .nav-area li {
+            display: inline-block;
+        }
+        .nav-area li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 20px;
+            font-size: 16px;
+            text-transform: uppercase;
+        }
+        .nav-area li a:hover {
+            background: #fff;
+            color: #333;
+        }
+        .welcome-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #fff;
+            text-align: center;
+        }
+        .welcome-text h1 {
+            font-size: 60px;
+            text-transform: uppercase;
+        }
+        .welcome-text a {
+            border: 1px solid #fff;
+            padding: 10px 25px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 14px;
+            color: #fff;
+        }
+        .welcome-text a:hover {
+            background: #fff;
+            color: #333;
+        }
+        /* Responsive styles */
+        @media (max-width: 600px) {
+            header {
+                height: 60vh;
+            }
+            .welcome-text h1 {
+                font-size: 30px;
+            }
+            .welcome-text a {
+                padding: 8px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <!-- Add a logo here if needed -->
+            </div>
+            <ul class="nav-area">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="welcome-text">
+            <h1>TOUR <span>IN</span></h1>
+            <a th:href="@{/login}">LOGIN HERE</a>
+        </div>
+    </header>
+
+    <section class="services">
+        <h3>Services</h3>
+        <div class="gallery-item">
+            <figure class="effect-ming tm-video-item">
+                <img src="main/resources/static/mon.jpg" alt="Historical Monuments" class="img-fluid">
+                <figcaption>
+                    <h2>Historical Monuments</h2>
+                    <a th:href="@{/login}">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="gallery-item">
+            <figure class="effect-ming tm-video-item">
+                <img src="main/resources/static/mon3.jpg" alt="Indian Heritage" class="img-fluid">
+                <figcaption>
+                    <h2>Indian Heritage</h2>
+                    <a th:href="@{/login}">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="gallery-item">
+            <figure class="effect-ming tm-video-item">
+                <img src="/photo_2021-11-30_09-33-15.jpg"alt="Culture" class="img-fluid">
+                <figcaption>
+                    <h2>Culture</h2>
+                    <a th:href="@{/login}">View more</a>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section id="about">
+        <h3>About</h3>
+        <p>This website motivates people to develop an interest in Indian culture, heritage, historical places, and famous monuments...</p>
+    </section>
+
+    <section id="gallery">
+        <h5>Explore Our Gallery</h5>
+        <img src="image-path/istockphoto.jpg" width="700px">
+        <img src="image-path/image.jpg" width="50%">
+        <img src="image-path/kuchipudi.jpg" width="750px">
+        <img src="image-path/another-image.jpg" width="659px" height="495px">
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>About TOUR IN</h3>
+            <p>Tour in is a free HTML template for video and photo websites...</p>
+        </div>
+        <div class="footer-links">
+            <a href="#">Advertise</a>
+            <a href="#">Support</a>
+            <a href="#">Our Company</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="footer-bottom">
+            <p>Copyright 2024 TOUR IN Company. All rights reserved.</p>
+            <p>Designed by <a href="https://templatemo.com" target="_blank">Tour IN</a></p>
+        </div>
+    </footer>
+</body>
+</html>
